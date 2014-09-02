@@ -44,9 +44,9 @@ module FontAwesome
       def register_compass_extension
         ::Compass::Frameworks.register(
             'font-awesome',
-            path: gem_path,
-            stylesheets_directory: stylesheets_path,
-            templates_directory: File.join(gem_path, 'templates')
+            :path => gem_path,
+            :stylesheets_directory => stylesheets_path,
+            :templates_directory => File.join(gem_path, 'templates')
         )
       end
 
